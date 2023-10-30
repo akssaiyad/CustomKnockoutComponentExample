@@ -1,0 +1,8 @@
+<h1 data-bind="text: heading, class: navSectionclass"></h1>
+<p data-bind="html: content"></p>
+<p data-bind="text: 'render direct string.'"></p>
+<p data-bind="style: {'backgroundColor': '#cabbea', 'color': getPrice() < 30 ? 'green' : 'red', 'padding': '15px', 'border': '1px solid #cccccc'}"><span data-bind="html: getCustomText()"></span></p>
+<p data-bind="css: {'success': getPrice() < 30, 'warning': getPrice() > 30 }, class: 'message'">The price of item <samp data-bind="text: getPrice() > 30 ? 'expensive' : 'affordable'"></samp> today.</p>
+<p>
+    <a data-bind="attr: { href: url, title: 'Test link', target: '_blank'}, text: heading"></a>
+</p>
